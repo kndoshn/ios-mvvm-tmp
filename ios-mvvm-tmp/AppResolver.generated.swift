@@ -5,6 +5,7 @@
 
 import DIKit
 import Foundation
+import UIKit
 
 extension AppResolver {
 
@@ -14,6 +15,11 @@ extension AppResolver {
 
     func resolveAppResolver() -> AppResolver {
         return provideAppResolver()
+    }
+
+    func resolveRepositoriesViewController() -> RepositoriesViewController {
+        let appResolver = resolveAppResolver()
+        return RepositoriesViewController.makeInstance(dependency: .init(appResolver: appResolver))
     }
 
 }
