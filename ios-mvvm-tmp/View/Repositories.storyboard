@@ -116,6 +116,10 @@
                                             <constraint firstItem="6Qf-Fa-TS4" firstAttribute="centerX" secondItem="99o-8Y-h41" secondAttribute="centerX" id="J5H-TJ-hsy"/>
                                             <constraint firstItem="6Qf-Fa-TS4" firstAttribute="centerY" secondItem="99o-8Y-h41" secondAttribute="centerY" id="ymF-iw-GZ7"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="activityIndicatorView" destination="7y4-aS-XQ7" id="KVQ-Qi-zGC"/>
+                                            <outlet property="messageLabel" destination="6Qf-Fa-TS4" id="zGS-h9-V71"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
