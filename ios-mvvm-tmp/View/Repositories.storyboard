@@ -77,6 +77,7 @@
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <state key="normal" image="star_off"/>
+                                                    <state key="selected" image="star_on"/>
                                                 </button>
                                             </subviews>
                                         </view>
@@ -91,6 +92,11 @@
                                             <constraint firstItem="zy5-N6-4sz" firstAttribute="centerY" secondItem="Y9T-AA-oYs" secondAttribute="centerY" id="gvH-3j-1as"/>
                                             <constraint firstAttribute="bottom" secondItem="Af3-Ac-7HE" secondAttribute="bottom" constant="2" id="gwN-WG-zJ4"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="descriptionLabel" destination="6a3-hq-ebG" id="Qzu-DM-h5u"/>
+                                            <outlet property="nameLabel" destination="Xia-hd-7NN" id="1ow-rC-Tpx"/>
+                                            <outlet property="starButton" destination="Af3-Ac-7HE" id="Zzr-FZ-qpW"/>
+                                        </connections>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="99o-8Y-h41" customClass="EmptyCell" customModule="ios_mvvm_tmp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="60" width="375" height="60"/>
@@ -143,5 +149,6 @@
     </scenes>
     <resources>
         <image name="star_off" width="20" height="20"/>
+        <image name="star_on" width="20" height="20"/>
     </resources>
 </document>
