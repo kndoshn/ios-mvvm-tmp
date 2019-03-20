@@ -36,7 +36,7 @@ final class RepositoriesDataSource: CollectionViewDataSource<RepositoriesViewMod
 }
 
 extension RepositoriesDataSource: RxCollectionViewDataSourceType {
-    func collectionView(_ collectionView: UICollectionView, observedEvent: Event<RepositoriesDataSource.Element>) {
+    func collectionView(_ collectionView: UICollectionView, observedEvent: Event<[RepositoriesViewModel.CellDeclaration]>) {
         guard case .next(let newCellDeclarations) = observedEvent else {
             return
         }
